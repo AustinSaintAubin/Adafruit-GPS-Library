@@ -37,12 +37,14 @@ All text above must be included in any redistribution
 // to generate your own sentences, check out the MTK command datasheet and use a checksum calculator
 // such as the awesome http://www.hhhh.org/wiml/proj/nmeaxor.html
 
-#define PMTK_LOCUS_STARTLOG  "$PMTK185,0*22"
+#define PMTK_LOCUS_STARTLOG "$PMTK185,0*22"
 #define PMTK_LOCUS_LOGSTARTED "$PMTK001,185,3*3C"
 #define PMTK_LOCUS_QUERY_STATUS "$PMTK183*38"
 #define LOCUS_OVERLAP 0
 #define LOCUS_FULLSTOP 1
 
+// standyby mode
+#define PMTK_STANDBY_MODE "$PMTK161,0*28"
 
 // how long to wait when we're looking for a response
 #define MAXWAITSENTENCE 5
